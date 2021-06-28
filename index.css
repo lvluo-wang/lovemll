@@ -287,6 +287,28 @@ html,body{
       -moz-animation-fill-mode: forwards; 
 }
 
+.eight-words{ 
+     margin-top: 30px;
+    font-size: 40px;
+    font-family: "Monda_bo", Georgia, sans-serif;
+    width: auto;
+    text-align: center;
+
+    opacity: 0;    
+    animation: fade-in 4s ease 14s 1;
+    -webkit-animation: fade-in 4s ease 14s 1;
+    -moz-animation: fade-in 4s ease 14s 1;
+    -o-animation: fade-in 4s ease 14s 1;
+    -ms-animation: fade-in 4s ease 14s 1;
+    
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+}
+
 .word-font {
     color: #FF99FF;
     margin-top: 5px;
