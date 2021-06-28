@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我们订婚啦</title>
+    <link rel="stylesheet" href="./index.css">
+
+    <style type="text/css">
+    	.a{
+  animation: aa 6s ease-out 0s 1 ;/* keyframe名称 动画完成时间 速度曲线 开始前的延迟 播放次数 是否反向播放*/
+}
+.b{
+  animation: bb 6s ease-out 0s 1 ;
+}
+.c{
+  animation: cc 6s ease-out 0s 1 ;
+}
+@keyframes aa{
+    0%{opacity:0}
+    33%{opacity:100%}
+    66%{opacity:100%}
+    100%{opacity:100%;}
+}
+@keyframes bb{
+    0%{opacity:0}
+    33%{opacity:0}
+    66%{opacity:100%}
+    100%{opacity:100%;}
+}
+@keyframes cc{
+    0%{opacity:0}
+    66%{opacity:0}
+    100%{opacity:100%}
+}
+
+
+@keyframes  ani{
+      0%{  opacity:0; }
+      100%{ opacity:1; }
+  }
+
+.aaa{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  line-height: 30px;
+}
+.bbb{
+	 position: relative;
+	 top:30px;
+  width: 100%;
+  height: 30px;
+  /*background-color: #ccc;*/
+}
+
+    </style>
+</head>
+<body>
+
+
+<div class="aaa a">aaaaaaaaaaaaaaaaaaaaaaa</div>
+<div class="bbb b">bbbbbbbbbbbbbbbbbbbbbbb</div>
+<div class="bbb b">cccccccccccc</div>
+<div class="bbb b">ddddddddd</div>
+
+<!-- 
+<div class="swiper-slide swiper2">
+        <div class="content_box">
+          <p>2018年01月01日</p>
+          <p>故事与你，不期而遇</p>
+        </div>
+        <div class="content_box">
+          <p >你的第一篇作品</p>
+          <p>《我的心里也有鬼》</p>
+          <p>与我们见面</p>
+        </div>
+        <div class="content_box">
+          <p>至此，你已创作</p>
+          <p> 文章</p>
+        </div>
+       
+</div> -->
+
+  <p>2018年01月01日</p>
+  <p>故事与你，不期而遇</p>
+
+
+<!-- <div class="heart"></div> -->
+<!-- <script src="js/index.js"></script> -->
+<script src="./love.js"></script>
+<script type="text/javascript">
+	function animation() {
+ 
+      var start = 2;  //开始时间
+ 
+      var end;
+ 
+      for(var j =2; j <8; j++) {        //循环有多少页
+ 
+        for(var i= 1; i < 5; i++) {     //循环每页的内容
+ 
+          end = start + 0.4;       //结束时间=开始时间+0.4s
+ 
+          $('.swiper'+j+' .content_box:nth-child('+i+')').css('animation','ani '+start+'s '+end+'s');
+ 
+          start = end;   //每行内容结束将结束时间赋值给下一行开始时间
+ 
+        }
+ 
+        start = start + 1;  //每页翻页的时候防止时间间隔太短动画效果不明显，所以开始时间+1s
+ 
+      }
+}
+
+var obj = document.getElementsByTagName('p');
+for(let i = 0; i<obj.length; i++){
+	    var t = i+1;
+        $(obj[i]).css('animation','ani 4s ease '+t+'s 1');
+    }
+
+
+
+
+
+// animation();
+
+</script>
+
+</body>
+</html>
