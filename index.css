@@ -139,7 +139,7 @@ html,body{
     text-align: center;
 }
 .words {
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Regular', cursive;
     width: auto;
     text-align: center;
@@ -289,7 +289,7 @@ html,body{
 
 .eight-words{ 
      margin-top: 30px;
-    font-size: 40px;
+    font-size: 60px;
     font-family: "Monda_bo", Georgia, sans-serif;
     width: auto;
     text-align: center;
@@ -312,7 +312,7 @@ html,body{
 .word-font {
     color: #FF99FF;
     margin-top: 5px;
-    font-size: 30px;
+    font-size: 40px;
     /*font-family: "Monda_bo", Georgia, sans-serif;*/
     width: auto;
     text-align: center;
